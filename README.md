@@ -35,13 +35,38 @@ Se creó una política personalizada con los siguientes permisos:
 * s3:PutObject
 
 Restringiendo el acceso únicamente al bucket específico:
-
 arn:aws:s3:::bucket-prueba-iam-adrian
 arn:aws:s3:::bucket-prueba-iam-adrian/*
 
 ## Resultado
 
 El usuario pudo subir archivos correctamente sin necesidad de otorgar permisos excesivos, manteniendo un control de acceso seguro.
+
+## Evidencia
+
+### Creación del bucket
+
+![Bucket](IAM Bucket creado.png)
+
+### Creación de usuario
+
+![Usuario](Soy Creación.png)
+
+### Política JSON
+
+![JSON](Soy JSON.png)
+
+### Política aplicada
+
+![Policy](Soy politica.png)
+
+### Error de permisos
+
+![Error](Error de IAM.png)
+
+### Resultado final
+
+![Exito](IAM Resultado final.png)
 
 ## Aprendizajes
 
